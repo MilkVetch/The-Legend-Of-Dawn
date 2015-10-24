@@ -1,23 +1,21 @@
 // Description
 	console.log('Designed By: Xing.Huang');
 
-//var
+// Loading Part
+	$('.loading').css('width',$(window).width()).css('height',$(window).height());
+
 
 // After Loading
 	function load() {
+		$('.loading').css('display','none');
+		$('.loaded').css('display','block');
 		$('#navigation-button').addClass('loaded');
+		$('.welcome-pokemon span').addClass('welcome-loaded');
 	}
 // Menu Click
 	var menuClick = 0;
 	$('#navigation-button').click(function(){
 		$('.nav-top').toggleClass('small-screen');
-		if (menuClick === 0) {
-			$('#navigation-button').css('margin-left',$(window).width()/2-28);
-			menuClick = 1;			
-		} else {
-			$('#navigation-button').css('margin-left','10px');
-			menuClick = 0;
-		}
 	});
 // ScrollBar Animation
 	

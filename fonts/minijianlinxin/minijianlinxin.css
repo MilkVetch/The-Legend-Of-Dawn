@@ -1,0 +1,10 @@
+@font-face {
+font-family: 'minijianlinxin502249';
+src: url('minijianlinxin.eot');
+src: url('minijianlinxin.eot?#iefix') format('embedded-opentype'),
+     url('minijianlinxin.woff') format('woff'),
+     url('minijianlinxin.ttf') format('truetype'),
+     url('minijianlinxin.svg#minijianlinxin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+   }
