@@ -1,0 +1,12 @@
+<nav>
+	<ul class="nav {{include.navClass}}">
+		<li><a href="{{site.baseurl}}/index.html" class="{% if page.url == '/index.html' %}current{% endif %}">首页</a></li>
+
+		<li><a href="{{site.baseurl}}/news-dawn.html" class="{% if page.url contains 'news' %}current{% endif %}">游戏动向</a></li>
+
+		<li><a href="{{site.baseurl}}/version.html" class="{% if page.url == '/version.html' %}current{% endif %}">历史版本</a></li>
+
+		<li><a href="http://www.tieba.baidu.com/f?kw=%E6%9B%99%E5%85%89%E4%BC%A0%E8%AF%B4">百度贴吧</a></li>
+		<li><a href="{{site.baseurl}}/join.html" class="{% if page.url == '/join.html' %}current{% endif %}">加入我们</a></li>
+	</ul>
+</nav>

@@ -3,20 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>TLOD</title>
+	<link rel="stylesheet" href="{{site.baseurl}}/css/common.css">
 </head>
 <body>
 
 <header>
 	<strong>曙光传说</strong>
-	<nav>
-		<ul>
-			<li><a href="{{site.baseurl}}/index.html">首页</a></li>
-			<li><a href="{{site.baseurl}}/join.html">加入我们</a></li>
-		</ul>
-	</nav>
+	{% include nav.html navClass="nav-top" %}
 </header>
 
 {{content}}
+
+<footer>
+	{% include nav.html navClass="nav-bottom" %}	
+	<p>&copy; 2013-2015 No.7 Studio. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
