@@ -2,12 +2,13 @@
 layout: default
 ---
 
+<div class="blankBox"></div>
 <h1>历史版本</h1>
 
 <ul>
 	{% for version in site.categories.game-source %}
 	<li>
-		<h3><a href="#">{{version.title}}</a></h3>
+		<h3><a href="{{site.baseurl}}{{version.url}}">{{version.title}}</a></h3>
 		<p>简介： {{version.meta}}</p>
 		<p>链接： <a href="{{version.source}}">{{version.source}}</a></p>
 	</li>

@@ -2,27 +2,36 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>TLOD</title>
-	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="/css/owl/owl.carousel.css"/>
+	<link rel="stylesheet" href="/css/owl/owl.theme.css"/>
+
+	<link rel="stylesheet" href="/css/main.css">
 </head>
-<body>
+<body onload="load()">
 
 <header>
-	<strong>曙光传说</strong>
 	<nav>
 	<ul class="nav nav-top">
-		<li><a href="/index.html" class="current">首页</a></li>
+		<li id="navigation-button"></li>
+		<li id="nav-home"><a href="/index.html" class="current">首页</a></li>
 
-		<li><a href="/news-dawn.html" class="">游戏动向</a></li>
+		<li id="nav-news"><a href="/news-dawn.html" class="">游戏动向</a></li>
 
-		<li><a href="/version.html" class="">历史版本</a></li>
+		<li id="nav-version"><a href="/version.html" class="">历史版本</a></li>
 
-		<li><a href="http://www.tieba.baidu.com/f?kw=%E6%9B%99%E5%85%89%E4%BC%A0%E8%AF%B4">百度贴吧</a></li>
-		<li><a href="/join.html" class="">加入我们</a></li>
+		<li id="nav-tieba"><a href="http://www.tieba.baidu.com/f?kw=%E6%9B%99%E5%85%89%E4%BC%A0%E8%AF%B4">百度贴吧</a></li>
+
+		<li id="nav-join"><a href="/join.html" class="">加入我们</a></li>
 	</ul>
 </nav>
 </header>
 
+<div class="welcome"></div>
 <h1>欢迎来到《曙光传说》</h1>
 <p>《曙光传说》是一款基于RPGmakerXP制作的游戏，游戏程序是以EXE为后缀名，仅可在PC上面使用。</p>
 <p>本游戏基于Essential引擎的一款同人作品，谨此向Essential、FlameGuru、Perter.O、Maruno表示感谢！</p>
@@ -30,20 +39,28 @@
 
 
 <footer>
-	<nav>
+<!-- 	<nav>
 	<ul class="nav nav-bottom">
-		<li><a href="/index.html" class="current">首页</a></li>
+		<li id="navigation-button"></li>
+		<li id="nav-home"><a href="/index.html" class="current">首页</a></li>
 
-		<li><a href="/news-dawn.html" class="">游戏动向</a></li>
+		<li id="nav-news"><a href="/news-dawn.html" class="">游戏动向</a></li>
 
-		<li><a href="/version.html" class="">历史版本</a></li>
+		<li id="nav-version"><a href="/version.html" class="">历史版本</a></li>
 
-		<li><a href="http://www.tieba.baidu.com/f?kw=%E6%9B%99%E5%85%89%E4%BC%A0%E8%AF%B4">百度贴吧</a></li>
-		<li><a href="/join.html" class="">加入我们</a></li>
+		<li id="nav-tieba"><a href="http://www.tieba.baidu.com/f?kw=%E6%9B%99%E5%85%89%E4%BC%A0%E8%AF%B4">百度贴吧</a></li>
+
+		<li id="nav-join"><a href="/join.html" class="">加入我们</a></li>
 	</ul>
-</nav>	
-	<p>&copy; 2013-2015 No.7 Studio. All rights reserved.</p>
+</nav>	 -->
+	<p>
+		&copy; 2013-2015 No.7 Studio. All rights reserved.
+	</p>
 </footer>
 
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

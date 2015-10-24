@@ -1,0 +1,11 @@
+.welcome {
+	display: inline-block;
+	@include responsive(height, 650px, 450px, 250px);
+	width: 100%;
+	background: url(../img/header-bg.jpg) center center;
+	background-size: cover;
+	background-attachment: scroll;
+	@include bp(large-only) {
+		background-attachment: fixed;			
+	}
+}
