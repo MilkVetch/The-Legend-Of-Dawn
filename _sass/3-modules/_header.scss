@@ -1,3 +1,7 @@
+.menu-tran {
+	@include juice-prefixer(transition, all 1s, webkit moz ms o spec);
+}
+
 header {
 	position: fixed;
 	z-index: 50;
@@ -102,19 +106,18 @@ header {
 				margin-left: 10px;
 				margin-bottom: 10px;
 				cursor: pointer;
-			}
-			#navigation-button.loaded {
-				@include juice-prefixer(transform, rotate(720deg), webkit moz ms o spec);
-				@include juice-prefixer(transition, all 1s, webkit moz ms o spec);
 				&:hover {
 					-webkit-box-shadow: 0px 0px 10px white;
 				}
+			}
+			#navigation-button.menu-loaded {
+				@include juice-prefixer(transform, rotate(720deg), webkit moz ms o spec);
 			}
 		}
 	}
 	
 	.nav-top.small-screen {
-		z-index: 9999;
+		z-index: 99;
 		background-color: rgba(0,0,0,.95);
 		li {
 			display: block;	
@@ -122,13 +125,8 @@ header {
 			width: 100%;
 			text-align: center;
 		}
-		#navigation-button.loaded {
+		#navigation-button.menu-click {
 			margin-left: calc(50% - 28px);
-			// margin-right: auto;
-			margin-bottom: 10px;
-			@include juice-prefixer(transform, rotate(1440deg), webkit moz ms o spec);
-			@include juice-prefixer(transition, all 1s, webkit moz ms o spec);
-
 		}
 	}
 }
