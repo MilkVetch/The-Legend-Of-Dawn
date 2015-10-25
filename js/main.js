@@ -9,6 +9,7 @@
 	function load() {
 		$('.loading').css('display','none');
 		$('.loaded').css('display','block');
+		$('header').css('display','block');
 		$('#navigation-button').addClass('loaded');
 		$('.welcome-pokemon span').addClass('welcome-loaded');
 	}
