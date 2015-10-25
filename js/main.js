@@ -7,11 +7,15 @@
 
 // After Loading
 	function load() {
-		$('.loading').css('display','none');
-		$('.loaded').css('display','block');
-		$('header').css('display','block');
-		$('#navigation-button').addClass('loaded');
-		$('.welcome-pokemon span').addClass('welcome-loaded');
+		setTimeout(function(){
+			$('.loading').css('display','none');
+			$('.loaded').css('display','block');
+			$('header').css('display','block');
+			setTimeout(function(){
+				$('#navigation-button').addClass('loaded');
+				$('.welcome-pokemon span').addClass('welcome-loaded');			
+			},10);
+		},3000);
 	}
 // Menu Click
 	var menuClick = 0;
